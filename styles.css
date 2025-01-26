@@ -1,0 +1,307 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #010101;
+  }
+  
+  /* Header */
+  .header {
+    position: sticky;
+    top: 0;
+    background: #222;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+  }
+  
+  .header h1 {
+    font-size: 1.5em;
+    margin: 0;
+  }
+  
+  .nav-bar {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .nav-bar a {
+    color: #ffffff;
+    text-decoration:navajowhite;
+    font-size: 1em;
+  }
+  
+  .nav-bar a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Hero Section */
+  .hero {
+    height: 100vh;
+    background: url('bck.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #f5f5f5;
+  }
+  
+  .hero-content h2 {
+    font-size: 4em;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #ffffff;
+    background: #1c0101;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .hero-content button:hover {
+    background: #b8a2a2;
+  }
+  
+  /* Section Styles */
+  .section {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .section .content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .section .item-img {
+    width: 100px;
+    height: 100px;
+    margin: 10px 0;
+    border-radius: 10px;
+  }
+  
+  /* Bucket List and Suggestions Lists */
+  .bucket-list, .suggestions-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .bucket-list li, .suggestions-list li {
+    flex: 1 1 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+    background: #f4f4f45b;
+    border: 1px solid #c4b0b084;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .bucket-list li:hover, .suggestions-list li:hover {
+    background: #eaeaea28;
+  }
+  
+  /* Success Stories */
+  .success-stories ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .success-stories li {
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  .success-stories img {
+    width: 200px;
+    height: 130px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  /* Contact Section */
+  .contact {
+    text-align: center;
+  }
+  
+  .social-media a img {
+    width: 20px;
+    margin: 0 20px;
+  }
+  
+  /* Chatbox */
+  #chatbox-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #401818;
+    color: #fff;
+    font-size: 2em;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  #chatbox-icon:hover {
+    background: #ede6e6;
+  }
+  /* Section Background Images */
+.section {
+    position: relative;
+    padding: 60px 20px;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  #why-dreamweaver {
+    background-image: url('goal.jpg');
+    color: #fff; /* Ensures text is visible over the background */
+  }
+  
+  #success-stories {
+    background-image: url('images/success-bg.jpg');
+    color: #1b0202;
+  }
+  
+  /* Ensure Background Images Do Not Overwhelm Content */
+  .section:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adds a dark overlay for better text contrast */
+    z-index: 1;
+  }
+  
+  .section .content {
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* Image Size Control */
+  .section img {
+    max-width: 100%;
+    height: 10cm;
+    display: block;
+    margin: 50px auto;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(34, 27, 27, 0.2); /* Subtle shadow effect */
+  }
+  
+  #why-dreamweaver img,
+  #success-stories img {
+    max-width: 500px; /* Adjust this value as needed */
+    height: auto;
+    margin: 40px auto;
+    border: 10px solid #ffffff49; /* Adds a white border for aesthetic */
+  }
+  /* General Section Styles */
+.section {
+    position: relative;
+    padding: 100px 80px;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #0d0101;
+    overflow: hidden;
+  }
+  
+  /* Hero Section */
+  .hero {
+    height: 100vh;
+    background-image: url('bck.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+  }
+  
+  /* Bucket List Section */
+  #bucket-list {
+    background-image: url('bucketlist.jpg');
+    color: #040000;
+  }
+  
+  /* Suggestions Section */
+  #suggestions {
+    background-image: url('suggestion.jpg');
+  }
+  
+  /* Why Dreamweaver Section */
+  #why-dreamweaver {
+    background-image: url('goal.jpg');
+  }
+  
+  /* Success Stories Section */
+  #success-stories {
+    background-image: url('success.jpg');
+  }
+  
+  /* Contact Section */
+  #contact {
+    background-image: url('contact.jpg');
+    color: #fffdfd;
+  }
+  
+  /* Dark Overlay for Text Readability */
+  .section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.153); /* Semi-transparent overlay */
+    z-index: 1;
+  }
+  
+  .section .content {
+    position: relative;
+    z-index: 2;
+  }
+  /* Social Media Container */
+.social-media {
+    display: flex; /* Flexbox for horizontal alignment */
+    justify-content: center; /* Center aligns the icons */
+    align-items: center;
+    gap: 20px; /* Adds space between icons */
+    margin: 20px 0;
+  }
+  
+  /* Social Media Links */
+  .social-link img {
+    width: 10px; /* Icon size */
+    height: 2cm; /* Icon size */
+    display: block;
+    transition: transform 0.3s ease; /* Add hover animation */
+  }
+  
+  /* Hover Effect */
+  .social-link img:hover {
+    transform: scale(1.2); /* Slightly enlarge on hover */
+  }
